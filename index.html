@@ -1,8 +1,23 @@
 <html>
+  <head>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@latest?dev",
+          "react-dom": "https://esm.sh/react-dom@latest/client?dev"
+        }
+      }
+    </script>
+  </head>
   <body>
     <div id="app">Hello, World!</div>
     <script type="text/javascript">
       const app = document.getElementById("app");
+      const header = document.createElement("h1");
+      const text = "Develop. Preview. Ship";
+      const headerContent = document.createTextNode(text);
+      header.appendChild(headerContent);
+      app.appendChild(header);
     </script>
   </body>
 </html>
